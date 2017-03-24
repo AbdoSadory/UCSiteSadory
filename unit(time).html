@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Time Page</title>
+        <link rel="stylesheet" href="Design.css" type="text/css"/>
+        <style>
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <div class="TimeParent">
+            <div class="TimeContainer">
+                <div class="TimeUnitsList">
+                    <ul class="Timeul">
+                        <li class="Timeli"><a href="Front%20Page.html" class="Timea">Home</a></li>
+                        <li class="Timeli"><a href="unit(length).html" class="Timea">Length</a></li>
+                        <li class="Timeli"><a href="unit(temperature).html" class="Timea">Temperature</a></li>
+                        <li class="Timeli"><a href="unit(area).html" class="Timea">Area</a></li>
+                        <li class="Timeli"><a href="unit(volume).html" class="Timea">Volume</a></li>
+                        <li class="Timeli"><a href="unit(weight).html" class="Timea">Weight</a></li>
+                    </ul>
+                </div>
+                
+                <h1 class="h1">Time</h1>
+                
+                <input type="number" class="Num" id="TimeNum"/>
+                
+                <select id="Timeselect">
+                    <option value="sec">Second</option>
+                    <option value="misec">Millisecond</option>
+                    <option value="mcsec">Microsecond</option>
+                    <option value="nsec">Nanosecond</option>
+                    <option value="psec">Picosecond</option>
+                    <option value="min">Minute</option>
+                    <option value="hr">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                    <option value="y">Year</option>
+                </select>
+                
+                <input type="button" value="Convert" class="Convert" id="Convert"
+                       onclick="convertTime()"/>
+                
+                <table class="Timetable">
+                    <tr class="head">
+                        <td>Second</td>
+                        <td>Millisecond</td>
+                        <td>Microsecond</td>
+                        <td>Nanosecond</td>
+                        <td>Picosecond</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Secondid">Num</td>
+                        <td id="Millisecondid">Num</td>
+                        <td id="Microsecondid">Num</td>
+                        <td id="Nanosecondid">Num</td>
+                        <td id="Picosecondid">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Minute</td>
+                        <td>Hour</td>
+                        <td>Day</td>
+                        <td>Week</td>
+                        <td>Month</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Minuteid">Num</td>
+                        <td id="Hourid">Num</td>
+                        <td id="Dayid">Num</td>
+                        <td id="Weekid">Num</td>
+                        <td id="Monthid">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Year</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Yearid">Num</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="units.js"></script>
+    </body>
+</html>

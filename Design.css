@@ -1,0 +1,743 @@
+/*------------- Front Page ------------*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+.Parent{
+    width: 1360px;
+    height: 660px; 
+    margin: auto;
+    background-image: url(Front-BG.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow: hidden;
+}
+.nav{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+.Parent .nav .logo{
+    width: 80px;
+    position: relative;
+    left: 170px;
+    top: 10px;
+    transform-style: preserve-3d;
+    animation: spin 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+.Parent .nav .main{
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 440px;
+}
+.Parent .nav .main li{
+    margin: auto;
+    display: inline-block;
+    list-style: none;
+    margin-left: 60px;
+}
+.Parent .nav .main li a{
+    padding-bottom: 5px;
+    color: #fdfefe;
+    font-family: Gill Sans MT, sans-serif;
+    font-size: 25px;
+    text-decoration:none;
+    transition: all 0.2s;
+    border: hidden;
+    outline: hidden;
+    
+}
+.Parent .nav .main li a:hover{
+    border: hidden;
+    color: #5adc9c;
+}
+.division{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 1;
+}
+.Parent .main .units .division li{
+    list-style: none;
+    background: #5adc9c;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    transition: all 0.2s;
+}
+.Parent .main .units .division li a{
+    display: block;
+    color: #fdfefe;
+    margin: 10px;
+    font-family: Gill Sans MT, sans-serif;
+    font-size: 25px;
+    text-decoration:none;
+    transition: all 0.2s;
+    border: hidden;
+    outline: hidden;
+}
+.units:hover .division{
+    display:block;
+}
+.Parent .main .units .division li:hover{
+    background:#fdfefe;
+}
+.Parent .main .units .division li:hover >a{
+    color: #5adc9c;
+}
+div h1{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    font-family: Century Gothic,sans-serif;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    position: relative;
+    top:300px;
+    z-index: 0;
+}
+div h3{
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 30px;
+    font-family: Century Gothic,sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    position: relative;
+    top:300px;
+}
+.downnav{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    bottom: -458px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.downnav p{
+    color: #fdfefe;
+    font-family: Gill Sans MT, sans-serif;
+    font-size: 20px;
+    transition: all 0.2s; 
+}
+.downnav p:hover{
+    color: #5adc9c;
+}
+
+/*------------- second Page ------------*/
+
+.Parent2{
+    width: 1360px;
+    height: 660px; 
+    margin: auto;
+    background-image: url(meeting.jpeg);
+    background-size:cover;
+    background-position: center;
+}
+body {
+  perspective: 10000px;
+}         
+.container1{       
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+} 
+.container1:hover {
+    transform: rotateY(180deg);
+}
+.container1  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+}            
+.front {
+    z-index:2;
+    background-color: rgba(255,255,255,.8);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 3px solid #5e5b62;
+    outline: none;
+}
+.container1 .front img{
+    width: 140px;
+    position: absolute;
+    top: 26px;
+    left: 56px;
+}
+.container1 .front .fronth{
+    text-align: center;
+    color: #5e5b62;
+    font-size: 102px;
+    font-family: Century Gothic,sans-serif;
+    letter-spacing: -6px;
+    word-spacing: 21px;
+    position: relative;
+    top:33px;
+    left: 61px;
+}
+.back {
+    z-index:1;
+    background-color: rgba(255,255,255,.8);
+    transform: rotateY(180deg);
+    backface-visibility:hidden;
+    border-radius: 10px;
+    border: 3px solid #5e5b62;
+    outline: none;
+}
+.container1 .back img{
+    width: 143px;
+    border-radius: 50%;
+    border: 3px solid #5e5b62;
+    position: absolute;
+    top: 27px;
+    left: 57px;
+}
+.container1 .back .backp{
+    color: #5e5b62;
+    font-size: 20px;
+    text-align: -webkit-auto;
+    font-family: Century Gothic,sans-serif;
+    word-spacing: 0px;
+    width: 564px;
+    height: 100%;
+    position: relative;
+    top: 1px;
+    left: 230px;
+}
+.container2{
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 127px;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+.container2:hover {
+    transform: rotateY(-180deg);
+}
+.container2  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+}  
+.front2 {
+    z-index:2;
+    background-color: rgba(255,255,255,.8);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 3px solid #5e5b62;
+    outline: none;
+}
+.container2 .front2 img{
+    width: 140px;
+    position: absolute;
+    top: 26px;
+    left: 56px;
+}
+.container2 .front2 .fronth2{
+    text-align: center;
+    color: #5e5b62;
+    font-size: 102px;
+    font-family: Century Gothic,sans-serif;
+    letter-spacing: -6px;
+    word-spacing: 21px;
+    position: relative;
+    top:33px;
+    left: 61px;
+}
+.back2 {
+    z-index:1;
+    background-color: rgba(255,255,255,.8);
+    transform: rotateY(-180deg);
+    backface-visibility:hidden;
+    border-radius: 10px;
+    border: 3px solid #5e5b62;
+    outline: none;
+}
+.container2 .back2 .backh{
+    text-align: center;
+    color: #5e5b62;
+    font-size: 41px;
+    font-family: Century Gothic,sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    position: relative;
+    top: 26px;
+    left: 14px;
+}
+.container2 .back2 .backp2{
+    color: #5e5b62;
+    font-size: 22px;
+    font-family: Century Gothic,sans-serif;
+    word-spacing: 0px;
+    width: 564px;
+    height: 100%;
+    position: relative;
+    top: 43px;
+    left: 128px;
+}
+.return .Home{
+    font-size: 29px;
+    font-family: Century Gothic,sans-serif;
+    text-decoration: none;
+    position: relative;
+    top: 183px;
+    left: 604px;
+    color: white;
+    padding: 11px 38px;
+    background: #5adc9c;
+    border-radius: 10px;
+    transition: all 0.6s; 
+}
+.return .Home:hover{
+    color: #5adc9c;
+    background: white;
+}
+
+/*------------- Length Page ------------*/
+.LengthParent{ 
+    width: 1360px;
+    height: 660px;
+    margin: auto;
+    background-image: url(Length.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow: hidden;
+}
+.LengthContainer{
+    background: rgba(0,0,0,0.6);
+    width: 900px;
+    height: 580px;
+    margin: 48px auto;
+}
+.h1{
+    text-align: center;
+    color: #5edc9c;
+    font-size: 60px;
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    margin: auto;
+}
+.Num{
+    display: block;
+    text-align: center;
+    color: #5edc9c;
+    font-size: 24px;
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    position: relative;
+    top: 17px;
+    margin: auto;
+    transition: all 0.4s;
+    border-radius: 10px;
+    outline: none;
+}
+.Num:hover{
+    transform: scale(1.1);
+}
+select{
+    color: white;
+    font-size: 24px;
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    display: block;
+    width: 262px;
+    margin: 25px auto 0;
+    text-align: center;
+    background: #5edc9c;
+    transition: all 0.4s;
+    border-radius: 10px;
+    outline: none;
+}
+select:hover{
+    transform: scale(1.1);
+}
+.Convert{
+    display: block;
+    text-align: center;
+    color: #5edc9c;
+    background: white;
+    font-size: 16px;
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    margin: 5px auto 0;
+    transition: all 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.Convert:hover{
+    background: #5edc9c;
+    color: white;
+}
+table{
+    margin: 10px auto;
+}
+.head td{
+    text-align: center;
+    width: 105px;
+    height: 46px;
+    padding: 10px;
+    background: #5edc9c;
+    color: white;
+    font-size: 16px;
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+}
+.base td{
+    text-align: center;
+    width: 105px;
+    height: 46px;
+    background: white;
+    color: #5edc9c;
+    font-size: 16px;
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+}
+.LengthUnitsList{
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    z-index: 100;
+}           
+.LengthUnitsList .Lengthul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.LengthUnitsList .Lengthul .Lengthli{
+    padding: 10px;
+    background: white;
+    border-top: 3px solid #5edc9c;
+    border-bottom: 3px solid #5edc9c;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.LengthUnitsList .Lengthul .Lengthli:hover{
+    background: #5edc9c;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.LengthUnitsList .Lengthul .Lengthli:hover > .Lengtha{
+    color: white;
+}
+.LengthUnitsList .Lengthul .Lengthli .Lengtha{
+    text-decoration: none;
+    color: #5edc9c;
+    transition: all 0.4s;
+}
+
+/*------------- Temperature Page ------------*/
+.TemperatureParent{
+    width: 1360px;
+    height: 660px;
+    margin: auto;
+    background-image: url(1.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.TemperatureContainer{
+    background: rgba(0,0,0,0.6);
+    width: 900px;
+    height: 580px;
+    margin: 48px auto;
+}
+.Temperaturetable{
+    margin: 70px auto;
+}
+.TemperatureUnitsList{
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    z-index: 100;
+}           
+.TemperatureUnitsList .Temperatureul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.TemperatureUnitsList .Temperatureul .Temperatureli{
+    padding: 10px;
+    background: white;
+    border-top: 3px solid #5edc9c;
+    border-bottom: 3px solid #5edc9c;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.TemperatureUnitsList .Temperatureul .Temperatureli:hover{
+    background: #5edc9c;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.TemperatureUnitsList .Temperatureul .Temperatureli:hover > .Temperaturea{
+    color: white;
+}
+.TemperatureUnitsList .Temperatureul .Temperatureli .Temperaturea{
+    text-decoration: none;
+    color: #5edc9c;
+    transition: all 0.4s;
+}
+/*------------- Area Page ------------*/
+.AreaParent{
+    width: 1360px;
+    height: 660px;
+    margin: auto;
+    background-image: url(Area.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.AreaContainer{
+    background: rgba(0,0,0,0.6);
+    width: 900px;
+    height: 580px;
+    margin: 48px auto;
+}
+.Areatable{
+    margin: 10px auto;
+}
+.AreaUnitsList{
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    z-index: 100;
+}           
+.AreaUnitsList .Areaul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.AreaUnitsList .Areaul .Areali{
+    padding: 10px;
+    background: white;
+    border-top: 3px solid #5edc9c;
+    border-bottom: 3px solid #5edc9c;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.AreaUnitsList .Areaul .Areali:hover{
+    background: #5edc9c;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.AreaUnitsList .Areaul .Areali:hover > .Areaa{
+    color: white;
+}
+.AreaUnitsList .Areaul .Areali .Areaa{
+    text-decoration: none;
+    color: #5edc9c;
+    transition: all 0.4s;
+}
+/*------------- Volume Page ------------*/
+.VolumeParent{
+    width: 1360px;
+    height: 660px;
+    margin: auto;
+    background-image: url(Volume.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.VolumeContainer{
+    background: rgba(0,0,0,0.6);
+    width: 900px;
+    height: 580px;
+    margin: 48px auto;
+}
+.Volumetable{
+    margin: 60px auto;
+}
+.VolumeUnitsList{
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    z-index: 100;
+}           
+.VolumeUnitsList .Volumeul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.VolumeUnitsList .Volumeul .Volumeli{
+    padding: 10px;
+    background: white;
+    border-top: 3px solid #5edc9c;
+    border-bottom: 3px solid #5edc9c;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.VolumeUnitsList .Volumeul .Volumeli:hover{
+    background: #5edc9c;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.VolumeUnitsList .Volumeul .Volumeli:hover > .Volumea{
+    color: white;
+}
+.VolumeUnitsList .Volumeul .Volumeli .Volumea{
+    text-decoration: none;
+    color: #5edc9c;
+    transition: all 0.4s;
+}
+/*------------- Weight Page ------------*/
+.WeightParent{
+    width: 1360px;
+    height: 660px;
+    margin: auto;
+    background-image: url(weight.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.WeightContainer{
+    background: rgba(0,0,0,0.6);
+    width: 900px;
+    height: 580px;
+    margin: 48px auto;
+}
+.Weighttable{
+    margin: 40px auto;
+}
+.WeightUnitsList{
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    z-index: 100;
+}           
+.WeightUnitsList .Weightul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.WeightUnitsList .Weightul .Weightli{
+    padding: 10px;
+    background: white;
+    border-top: 3px solid #5edc9c;
+    border-bottom: 3px solid #5edc9c;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.WeightUnitsList .Weightul .Weightli:hover{
+    background: #5edc9c;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.WeightUnitsList .Weightul .Weightli:hover > .Weighta{
+    color: white;
+}
+.WeightUnitsList .Weightul .Weightli .Weighta{
+    text-decoration: none;
+    color: #5edc9c;
+    transition: all 0.4s;
+}
+/*------------- Time Page ------------*/
+.TimeParent{
+    width: 1360px;
+    height: 660px;
+    margin: auto;
+    background-image: url(time.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.TimeContainer{
+    background: rgba(0,0,0,0.6);
+    width: 900px;
+    height: 580px;
+    margin: 48px auto;
+}
+.Timetable{
+    margin: 10px auto;
+}
+.TimeUnitsList{
+    font-family: Century Gothic,sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    z-index: 100;
+}           
+.TimeUnitsList .Timeul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.TimeUnitsList .Timeul .Timeli{
+    padding: 10px;
+    background: white;
+    border-top: 3px solid #5edc9c;
+    border-bottom: 3px solid #5edc9c;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.TimeUnitsList .Timeul .Timeli:hover{
+    background: #5edc9c;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.TimeUnitsList .Timeul .Timeli:hover > .Timea{
+    color: white;
+}
+.TimeUnitsList .Timeul .Timeli .Timea{
+    text-decoration: none;
+    color: #5edc9c;
+    transition: all 0.4s;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Weight Page</title>
+        <link rel="stylesheet" href="Design.css" type="text/css"/>
+        <style>
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <div class="WeightParent">
+            <div class="WeightContainer">
+                <div class="WeightUnitsList">
+                    <ul class="Weightul">
+                        <li class="Weightli"><a href="Front%20Page.html" class="Weighta">Home</a></li>
+                        <li class="Weightli"><a href="unit(length).html" class="Weighta">Length</a></li>
+                        <li class="Weightli"><a href="unit(temperature).html" class="Weighta">Temperature</a></li>
+                        <li class="Weightli"><a href="unit(area).html" class="Weighta">Area</a></li>
+                        <li class="Weightli"><a href="unit(volume).html" class="Weighta">Volume</a></li>
+                        <li class="Weightli"><a href="unit(time).html" class="Weighta">Time</a></li>
+                    </ul>
+                </div>
+                
+                <h1 class="h1">Weight</h1>
+                
+                <input type="number" class="Num" id="WeightNum"/>
+                
+                <select id="Weightselect">
+                    <option value="KM">Kilometer</option>
+                    <option value="GM">Gram</option>
+                    <option value="MGM">Milligram</option>
+                    <option value="MT">Metric Ton</option>
+                    <option value="LT">Long Ton</option>
+                    <option value="ST">Short Ton</option>
+                    <option value="P">Pound</option>
+                    <option value="OU">Ounce</option>
+                    <option value="Car">Carrat</option>
+                    <option value="AMU">Atomic Mass Unit</option>
+                </select>
+                
+                <input type="button" value="Convert" class="Convert" id="Convert"
+                       onclick="convertWeight()"/>
+                
+                <table class="Weighttable">
+                    <tr class="head">
+                        <td>Kilometer</td>
+                        <td>Gram</td>
+                        <td>Milligram</td>
+                        <td>Metric Ton</td>
+                        <td>Long Ton</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Kilometer">Num</td>
+                        <td id="Gram">Num</td>
+                        <td id="Milligram">Num</td>
+                        <td id="Metric Ton">Num</td>
+                        <td id="Long Ton">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Short Ton</td>
+                        <td>Pound</td>
+                        <td>Ounce</td>
+                        <td>Carrat</td>
+                        <td>Atomic Mass Unit</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Short Ton">Num</td>
+                        <td id="Pound">Num</td>
+                        <td id="Ounce">Num</td>
+                        <td id="Carrat">Num</td>
+                        <td id="Atomic Mass Unit">Num</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <script src="units.js"></script>
+    </body>
+</html>

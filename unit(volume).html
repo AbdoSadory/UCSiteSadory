@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Volume Page</title>
+        <link rel="stylesheet" href="Design.css" type="text/css"/>
+        <style>
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <div class="VolumeParent">
+            <div class="VolumeContainer">
+                <div class="VolumeUnitsList">
+                    <ul class="Volumeul">
+                        <li class="Volumeli"><a href="Front%20Page.html" class="Volumea">Home</a></li>
+                        <li class="Volumeli"><a href="unit(length).html" class="Volumea">Length</a></li>
+                        <li class="Volumeli"><a href="unit(temperature).html" class="Volumea">Temperature</a></li>
+                        <li class="Volumeli"><a href="unit(area).html" class="Volumea">Area</a></li>
+                        <li class="Volumeli"><a href="unit(weight).html" class="Volumea">Weight</a></li>
+                        <li class="Volumeli"><a href="unit(time).html" class="Volumea">Time</a></li>
+                    </ul>
+                </div>
+                
+                <h1 class="h1">Volume</h1>
+                
+                <input type="number" class="Num" id="VolumeNum"/>
+                
+                <select id="Volumeselect">
+                    <option value="m3">Cubic Meter</option>
+                    <option value="km3">Cubic Kilometer</option>
+                    <option value="cm3">Cubic Centimeter</option>
+                    <option value="mm3">Cubic Millimeter</option>
+                    <option value="liter">Liter</option>
+                    <option value="mliter">Milliliter</option>
+                    <option value="mile3">Cubic Mile</option>
+                    <option value="yd3">Cubic Yard</option>
+                    <option value="ft3">Cubic Foot</option>
+                    <option value="inch3">Cubic Inch</option>
+                </select>
+                
+                <input type="button" value="Convert" class="Convert" id="Convert"
+                       onclick="convertVolume()"/>
+                
+                <table class="Volumetable">
+                    <tr class="head">
+                        <td>Meter<sup>3</sup></td>
+                        <td>Kilometer<sup>3</sup></td>
+                        <td>Centimeter<sup>3</sup></td>
+                        <td>Millimeter<sup>3</sup></td>
+                        <td>Liter</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Meter3id">Num</td>
+                        <td id="Kilometer3id">Num</td>
+                        <td id="Centimeter3id">Num</td>
+                        <td id="Millimeter3id">Num</td>
+                        <td id="Literid">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Milliliter</td>
+                        <td>Mile<sup>3</sup></td>
+                        <td>Yard<sup>3</sup></td>
+                        <td>Foot<sup>3</sup></td>
+                        <td>Inch<sup>3</sup></td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Milliliterid">Num</td>
+                        <td id="Mile3id">Num</td>
+                        <td id="Yard3id">Num</td>
+                        <td id="Foot3id">Num</td>
+                        <td id="Inch3id">Num</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="units.js"></script>
+    </body>
+</html>

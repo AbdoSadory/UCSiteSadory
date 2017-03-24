@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Length Page</title>
+        <link rel="stylesheet" href="Design.css" type="text/css"/>
+        <style>
+        </style>
+        <script></script>
+    </head>
+    <body>
+        
+        <div class="LengthParent">
+            <div class="LengthContainer">
+                <div class="LengthUnitsList">
+                    <ul class="Lengthul">
+                        <li class="Lengthli"><a href="Front%20Page.html" class="Lengtha">Home</a></li>
+                        <li class="Lengthli"><a href="unit(temperature).html" class="Lengtha">Temperature</a></li>
+                        <li class="Lengthli"><a href="unit(area).html" class="Lengtha">Area</a></li>
+                        <li class="Lengthli"><a href="unit(volume).html" class="Lengtha">Volume</a></li>
+                        <li class="Lengthli"><a href="unit(weight).html" class="Lengtha">Weight</a></li>
+                        <li class="Lengthli"><a href="unit(time).html" class="Lengtha">Time</a></li>
+                    </ul>
+                </div>
+                <h1 class="h1">Length</h1>
+                <input type="number" class="Num" id="LengthNum"/>
+                <select id="Lengthselect">
+                    <option value="Meter">Meter</option>
+                    <option value="Kilometer">Kilometer</option>
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Millimeter">Millimeter</option>
+                    <option value="Micrometer">Micrometer</option>
+                    <option value="Nanometer">Nanometer</option>
+                    <option value="Mile">Mile</option>
+                    <option value="Yard">Yard</option>
+                    <option value="Foot">Foot</option>
+                    <option value="Inch">Inch</option>
+                    <option value="Light Year">Light Year</option>
+                </select>
+                <input type="button" value="Convert" class="Convert" id="Convert"
+                       onclick="convertLength()"/>
+                <table>
+                    <tr class="head">
+                        <td>Meter</td>
+                        <td>Kilometer</td>
+                        <td>Centimeter</td>
+                        <td>Millimeter</td>
+                        <td>Micrometer</td>
+                        
+                    </tr>
+                    <tr class="base">
+                        <td id="Meterid">Num</td>
+                        <td id="Kilometerid">Num</td>
+                        <td id="Centimeterid">Num</td>
+                        <td id="Millimeterid">Num</td>
+                        <td id="Micrometerid">Num</td>
+                        
+                    </tr>
+                    <tr class="head">
+                        <td>Nanometer</td>
+                        <td>Mile</td>
+                        <td>Yard</td>
+                        <td>Foot</td>
+                        <td>Inch</td> 
+                    </tr>
+                    <tr class="base">
+                        <td id="Nanometerid">Num</td>
+                        <td id="Mileid">Num</td>
+                        <td id="Yardid">Num</td>
+                        <td id="Footid">Num</td>
+                        <td id="Inchid">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Light Year</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Light Yearid">Num</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <script src="units.js"></script>
+    </body>
+</html>

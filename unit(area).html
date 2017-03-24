@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Area Page</title>
+        <link rel="stylesheet" href="Design.css" type="text/css"/>
+        <style>
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <div class="AreaParent">
+            <div class="AreaContainer">
+                <div class="AreaUnitsList">
+                    <ul class="Areaul">
+                        <li class="Areali"><a href="Front%20Page.html" class="Areaa">Home</a></li>
+                        <li class="Areali"><a href="unit(length).html" class="Areaa">Length</a></li>
+                        <li class="Areali"><a href="unit(temperature).html" class="Areaa">Temperature</a></li>
+                        <li class="Areali"><a href="unit(volume).html" class="Areaa">Volume</a></li>
+                        <li class="Areali"><a href="unit(weight).html" class="Areaa">Weight</a></li>
+                        <li class="Areali"><a href="unit(time).html" class="Areaa">Time</a></li>
+                    </ul>
+                </div>
+                <h1 class="h1">Area</h1>
+                <input type="number" class="Num" id="AreaNum"/>
+                <select id="Areaselect">
+                    <option value="smeter">Square Meter</option>
+                    <option value="skilometer">Square Kilometer</option>
+                    <option value="scentimeter">Square Centimeter</option>
+                    <option value="smillimeter">Square Millimeter</option>
+                    <option value="smicrometer">Square Micrometer</option>
+                    <option value="Hectare">Hectare</option>
+                    <option value="smile">Square Mile</option>
+                    <option value="syard">Square Yard</option>
+                    <option value="sfoot">Square Foot</option>
+                    <option value="sinch">Square Inch</option>
+                    <option value="Acre">Acre</option>
+                </select>
+                <input type="button" value="Convert" class="Convert" id="Convert" onclick="convertArea()"/>
+                <table class="Areatable">
+                    <tr class="head">
+                        <td>Meter<sup>2</sup></td>
+                        <td>Kilometer<sup>2</sup></td>
+                        <td>Centimeter<sup>2</sup></td>
+                        <td>Millimeter<sup>2</sup></td>
+                        <td>Micrometer<sup>2</sup></td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Meter2id">Num</td>
+                        <td id="Kilometer2id">Num</td>
+                        <td id="Centimeter2id">Num</td>
+                        <td id="Millimeter2id">Num</td>
+                        <td id="Micrometer2id">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Hectare</td>
+                        <td>Mile<sup>2</sup></td>
+                        <td>Yard<sup>2</sup></td>
+                        <td>Foot<sup>2</sup></td>
+                        <td>Inch<sup>2</sup></td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Hectareid">Num</td>
+                        <td id="Mile2id">Num</td>
+                        <td id="Yard2id">Num</td>
+                        <td id="Foot2id">Num</td>
+                        <td id="Inch2id">Num</td>
+                    </tr>
+                    
+                    <tr class="head">
+                        <td>Acre</td>
+                    </tr>
+                    <tr class="base">
+                        <td id="Acreid">Num</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="units.js"></script>
+    </body>
+</html>
