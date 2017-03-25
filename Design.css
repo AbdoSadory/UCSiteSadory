@@ -128,13 +128,13 @@ div h3{
     background: rgba(0,0,0,0.5);
     text-align: center;
 }
-.downnav p{
+.downnav a{
     color: #fdfefe;
     font-family: Gill Sans MT, sans-serif;
     font-size: 20px;
     transition: all 0.2s; 
 }
-.downnav p:hover{
+.downnav a:hover{
     color: #5adc9c;
 }
 
