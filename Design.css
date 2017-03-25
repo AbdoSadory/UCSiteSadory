@@ -129,6 +129,7 @@ div h3{
     text-align: center;
 }
 .downnav a{
+    text-decoration: none;
     color: #fdfefe;
     font-family: Gill Sans MT, sans-serif;
     font-size: 20px;
